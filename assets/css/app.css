@@ -13,7 +13,7 @@
     font-weight: bold;
     font-style: italic;
     text-align: left;
-    color: #800000;
+    color: #E11236;
 }
 
 .carousel-caption hr{
@@ -145,7 +145,7 @@ footer{
 }
 
 .bg-grey{
-    background: #818181e2;
+    background: #1C1C1C;
 }
 
 .cta-contato h3{
@@ -167,7 +167,7 @@ footer{
 }
 
 form.donnovo input, form.donnovo textarea{
-    border: #800000 1px solid;
+    border: #E11236 1px solid;
 }
 
 .text-colored{
@@ -197,26 +197,26 @@ form.donnovo input, form.donnovo textarea{
 .filter-button
 {
     font-size: 18px;
-    border: 1px solid #800000;
+    border: 1px solid #E11236;
     border-radius: 5px;
     text-align: center;
-    color: #800000;
+    color: #E11236;
     margin-bottom: 30px;
 
 }
 .filter-button:hover
 {
     font-size: 18px;
-    border: 1px solid #800000;
+    border: 1px solid #E11236;
     border-radius: 5px;
     text-align: center;
     color: #ffffff;
-    background-color: #800000;
+    background-color: #E11236;
 
 }
 .btn-default:active .filter-button:active
 {
-    background-color: #800000;
+    background-color: #E11236;
     color: white;
 }
 
@@ -337,7 +337,7 @@ form.donnovo input, form.donnovo textarea{
 
 .checked,
 .price span {
-	color: #800000;
+	color: #E11236;
 }
 
 .product-title,
@@ -376,7 +376,7 @@ form.donnovo input, form.donnovo textarea{
 
 .add-to-cart,
 .like {
-	background: #800000;
+	background: #E11236;
 	padding: 1.2em 1.5em;
 	border: none;
 	text-transform: UPPERCASE;
