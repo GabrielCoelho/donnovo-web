@@ -1,0 +1,139 @@
+@media only screen and (max-width: 1366px)
+{
+    .carousel-caption{
+        right:40%;
+        bottom: 25%;
+        text-align: left;
+    }
+    
+    .carousel-caption h5{
+        font-size: 3em;
+        font-weight: bold;
+        font-style: italic;
+        text-align: left;
+        color: #800000;
+    }
+}
+
+@media only screen and (max-width: 1199px)
+{
+    .carousel-caption{
+        right:40%;
+        bottom: 14%;
+        text-align: left;
+    }
+    
+    .carousel-caption h5{
+        font-size: 2.5em;
+        font-weight: bold;
+        font-style: italic;
+        text-align: left;
+        color: #800000;
+    }
+}
+
+@media only screen and (max-width: 991px)
+{
+	.carousel-caption{
+        right:40%;
+        bottom: 4%;
+        text-align: left;
+    }
+    
+    .carousel-caption h5{
+        font-size: 2em;
+        font-weight: bold;
+        font-style: italic;
+        text-align: left;
+        color: #800000;
+    }
+    .envio-info{
+        height: 11em;
+    }
+
+    .sobre-right{
+        top: 7%;
+        left: 35%;
+    }
+    .borderfooter{
+        border-right: none;
+    }
+}
+
+@media only screen and (max-width: 767px)
+{
+    .envio-info .bold-text
+    {
+        font-size: 13.5px;
+    }
+    .sobre-right{
+        top: 10%;
+        left: 35%;
+    }
+    .sobre-right p{
+        font-size: 0.9em;
+    }
+    .borderfooter{
+        border-right: none;
+    }
+}
+
+@media only screen and (max-width: 575px)
+{
+    .sobre-right{
+        top: 10%;
+        right: 3%;
+        font-size: 0.9em;
+    }
+    .borderfooter{
+        border-right: none;
+    }
+}
+
+@media only screen and (max-width: 505px)
+{
+    .sobre-right{
+        top: 10%;
+        right: 3%;
+        font-size: 0.9em;
+    }
+    .borderfooter{
+        border-right: none;
+    }
+}
+
+@media only screen and (max-width: 484px)
+{
+    .sobre-right{
+        top: 10%;
+        right: 3%;
+        font-size: 0.9em;
+    }
+    .borderfooter{
+        border-right: none;
+    }
+}
+
+@media only screen and (max-width: 420px)
+{
+    .sobre-right{
+        top: 3%;
+        right: 3%;
+        font-size: 0.868em;
+    }
+    .borderfooter{
+        border-right: none;
+    }
+}
+
+@media only screen and (max-width: 380px)
+{
+    .sobre-right{
+        top: 2%;
+        right: 3%;
+        font-size: 0.85em;
+    }
+    .borderfooter{
+        border-right: none;
+    }
+}
