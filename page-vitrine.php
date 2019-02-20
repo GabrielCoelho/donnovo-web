@@ -24,17 +24,47 @@ get_header();
     <main class="container my-4">
         <div class="row text-center justify-content-center my-5">
             <button class="btn btn-default filter-button mr-2" data-filter="all">Todos</button>
-            <button class="btn btn-default filter-button mr-2" data-filter="hdpe">Categoria1</button>
+            <?php 
+                $tags_array = get_tags(array('fields' => 'names'));
+                // die(print_r($tags_array));
+                foreach ($tags_array as $key) {
+                    ?>
+                        <button class="btn btn-default filter-button mr-2" data-filter="<?= $key;?>"><?= $key?></button>
+                    <?php
+                }
+            ?>
+            <!-- <button class="btn btn-default filter-button mr-2" data-filter="hdpe">Categoria1</button>
             <button class="btn btn-default filter-button mr-2" data-filter="sprinkle">Categoria2</button>
             <button class="btn btn-default filter-button mr-2" data-filter="spray">Categoria3</button>
-            <button class="btn btn-default filter-button mr-2" data-filter="irrigation">Categoria4</button>
+            <button class="btn btn-default filter-button mr-2" data-filter="test">Categoria 4</button> -->
         </div>
         <div class="row">
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                <img src="https://via.placeholder.com/365/?text=Produto1" class="img-fluid">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+            <?php
+                $query_archive = new WP_Query(array('category_name' => 'Produto'));
+                // die(print_r($query_archive->posts));
+                //die(print_r($query_archive->post_count));
+                if (  $query_archive->have_posts() ) : while (  $query_archive->have_posts() ) :  $query_archive->the_post(); 
+                    // print_r($query_archive->post))
+                    $query_tags = get_the_tags($query_archive->post->ID);
+                    // die(print_r($query_tags));
+            ?>
+                    <div class="py-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 filter<?php foreach ($query_tags as $key) {
+                            echo " " . $key->name;
+                        }?>">
+                    <a href="<?php the_permalink();?>">
+                        <div class="card bg-dark text-white"> 
+                        <img src="<?= the_post_thumbnail_url('large');?>" class="card-img-top" alt="<?php the_title();?>">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">
+                                <?php the_title();?>
+                            </h5>
+                        </div>
+                    </div></a></div>
+            <?php
+                    endwhile; 
+                else :esc_html_e( 'Sorry, no posts matched your criteria.' ); endif; wp_reset_postdata();
+            ?>
+            <!-- <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
                 <img src="https://via.placeholder.com/365/?text=Produto2" class="img-fluid">
             </div>
 
@@ -76,13 +106,13 @@ get_header();
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
                 <img src="https://via.placeholder.com/365/?text=Produto12" class="img-fluid">
-            </div>
+            </div> -->
         </div>
-        <div class="row justify-content-center">
+        <!-- <div class="row justify-content-center">
             <div class="col-5 offset-3">
                 <a href="" role="button" class="btn btn-danger btn-lg">Carregar Mais</a>
             </div>
-        </div>
+        </div> -->
     </main>
 
 
