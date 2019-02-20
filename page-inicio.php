@@ -159,7 +159,7 @@ $slider = CFS()->get('slider_inicial');
                     </p>
                 </div>
                 <div class="button-bottom-sobre">
-                    <a href="#" class="btn btn-danger btn-lg">Saiba Mais</a>
+                    <a href="/donnovo/sobre" class="btn btn-danger btn-lg">Saiba Mais</a>
                 </div>
             </div>
         </div>

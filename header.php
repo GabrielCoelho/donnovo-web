@@ -48,20 +48,20 @@
         </button>
         <div id="my-nav" class="collapse navbar-collapse">
             <ul class="navbar-nav mx-auto">
-                <li class="nav-item mr-5 active">
-                    <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
+                <li class="nav-item mr-5 <?php if(is_page('Inicio')){?>active<?php }?>">
+                    <a class="nav-link" href="/donnovo/">Início <?php if(is_page('Inicio')){?><span class="sr-only">(current)</span> <?php }?></a>
                 </li>
-                <li class="nav-item mr-5">
-                    <a class="nav-link  href=" #">Produtos</a>
+                <li class="nav-item mr-5 <?php if(is_page('Produtos')){?>active<?php }?>">
+                    <a class="nav-link"  href="/donnovo/produtos">Produtos <?php if(is_page('Produtos')){?><span class="sr-only">(current)</span> <?php }?></a>
                 </li>
                 <li class="nav-item mr-5 d-none d-lg-block">
-                    <a class="nav-link  href=" #"><img class="img-fluid" src="assets/images/logo_donnovo.jpg" alt="Don Novo"></a>
+                    <a class="nav-link"  href="/donnovo/"><img class="img-fluid" src="assets/images/logo_donnovo.jpg" alt="Don Novo"></a>
                 </li>
-                <li class="nav-item mr-5">
-                    <a class="nav-link  href=" #">Sobre</a>
+                <li class="nav-item mr-5 <?php if(is_page('Sobre')){?>active<?php }?>">
+                    <a class="nav-link"  href="/donnovo/sobre">Sobre <?php if(is_page('Sobre')){?><span class="sr-only">(current)</span> <?php }?></a>
                 </li>
-                <li class="nav-item mr-5">
-                    <a class="nav-link  href=" #">Contato</a>
+                <li class="nav-item mr-5 <?php if(is_page('Contato')){?>active<?php }?>">
+                    <a class="nav-link"  href="/donnovo/contato">Contato <?php if(is_page('Contato')){?><span class="sr-only">(current)</span> <?php }?></a>
                 </li>
             </ul>
         </div>
