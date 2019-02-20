@@ -51,8 +51,8 @@
                 <li class="nav-item mr-5 <?php if(is_page('Inicio')){?>active<?php }?>">
                     <a class="nav-link" href="/donnovo/">Início <?php if(is_page('Inicio')){?><span class="sr-only">(current)</span> <?php }?></a>
                 </li>
-                <li class="nav-item mr-5 <?php if(is_page('Produtos')){?>active<?php }?>">
-                    <a class="nav-link"  href="/donnovo/produtos">Produtos <?php if(is_page('Produtos')){?><span class="sr-only">(current)</span> <?php }?></a>
+                <li class="nav-item mr-5 <?php if(is_page('Produtos') || is_single()){?>active<?php }?>">
+                    <a class="nav-link"  href="/donnovo/produtos">Produtos <?php if(is_page('Produtos') || is_single()){?><span class="sr-only">(current)</span> <?php }?></a>
                 </li>
                 <li class="nav-item mr-5 d-none d-lg-block">
                     <a class="nav-link"  href="/donnovo/"><img class="img-fluid" src="assets/images/logo_donnovo.jpg" alt="Don Novo"></a>

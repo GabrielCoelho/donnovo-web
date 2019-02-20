@@ -75,7 +75,28 @@ $slider = CFS()->get('slider_inicial');
         <div class="row">
             <div class="container">
                 <div class="row">
+                <?php 
+                // Query para pegar os 9 ultimos posts
+                $queryIndex = new WP_Query(array('category_name' => 'Produto'));
+                if($queryIndex->found_posts > 5){
+                    $queryIndex->post_count = 5;
+                }
+                if (  $queryIndex->have_posts() ) : while (  $queryIndex->have_posts() ) :  $queryIndex->the_post(); ?>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                        <a href="<?php the_permalink();?>">
+                            <div class="card bg-dark text-white">
+                                <img src="<?= the_post_thumbnail_url('large');?>" height="160" width="160" class="card-img-top" alt="<?php the_title();?>">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title"><?php the_title();?></h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                <?php
+                    endwhile; 
+                    else :esc_html_e( 'Sorry, no posts matched your criteria.' ); endif; wp_reset_postdata();
+                ?>
+                    <!-- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
                         <a href="#">
                             <div class="card bg-dark text-white">
                                 <img src="https://via.placeholder.com/220" class="card-img-top" alt="ProdutoDONNOVO">
@@ -85,7 +106,7 @@ $slider = CFS()->get('slider_inicial');
                             </div>
                         </a>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 d-none d-sm-block">
                         <a href="#">
                             <div class="card bg-dark text-white">
                                 <img src="https://via.placeholder.com/220" class="card-img-top" alt="ProdutoDONNOVO">
@@ -114,17 +135,7 @@ $slider = CFS()->get('slider_inicial');
                                 </div>
                             </div>
                         </a>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 d-none d-sm-block">
-                        <a href="#">
-                            <div class="card bg-dark text-white">
-                                <img src="https://via.placeholder.com/220" class="card-img-top" alt="ProdutoDONNOVO">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title">Produto Don Novo</h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    </div> -->
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
                         <a href="#">
                             <div class="card bg-dark text-white">

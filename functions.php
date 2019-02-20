@@ -13,6 +13,8 @@ remove_action('admin_print_styles', 'print_emoji_styles');
 
 //habilitar menu
 add_theme_support('menu');
+//habilitar thumbnail
+add_theme_support( 'post-thumbnails' ); 
 
 function register_my_menu()
 {
