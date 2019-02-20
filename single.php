@@ -3,6 +3,12 @@ get_header();
 
 $produto = array();
 $produto['nome']      =   CFS()->get('nome_produto');
+if(!isset($produto['nome'])){
+    global $wp_query;
+            $wp_query->set_404();
+            status_header( 404 );
+            get_template_part( 404 ); exit();
+}
 $produto['cod']       =   CFS()->get('codigo_produto');
 $produto['desc']      =   CFS()->get('descricao_produto');
 $produto['img']       =   CFS()->get('imagem_produto');

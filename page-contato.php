@@ -25,12 +25,12 @@ get_header();
     <div class="container my-5">
         <div class="row">
             <div class="col-xs-12 col-sm-6">
-                <form class="donnovo" method="post" action="">
+                <form class="donnovo" method="post" action="<?= get_template_directory_uri(  );?>/enviar-email.php">
                     <div class="form-group">
                         <input name="nome" class="form-control" type="text" placeholder="Nome">
                         <input type="text" name="telefone" class="form-control" placeholder="Telefone">
                         <input type="email" name="email" class="form-control" placeholder="Email">
-                        <textarea id="my-input" class="form-control" placeholder="Mensagem" rows="3"></textarea>
+                        <textarea id="my-input" name="message" class="form-control" placeholder="Mensagem" rows="3"></textarea>
                         <input type="submit" value="Enviar" class="btn btn-danger btn-lg">
                     </div>
                 </form>
