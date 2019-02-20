@@ -25,7 +25,7 @@ get_header();
     <div class="container my-5">
         <div class="row">
             <div class="col-xs-12 col-sm-6">
-                <form class="donnovo" method="post" action="<?= get_template_directory_uri(  );?>/enviar-email.php">
+                <form class="donnovo" method="post" action="<?= get_template_directory_uri(  );?>/enviar_email.php">
                     <div class="form-group">
                         <input name="nome" class="form-control" type="text" placeholder="Nome">
                         <input type="text" name="telefone" class="form-control" placeholder="Telefone">
