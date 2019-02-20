@@ -85,7 +85,7 @@ $slider = CFS()->get('slider_inicial');
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
                         <a href="<?php the_permalink();?>">
                             <div class="card bg-dark text-white">
-                                <img src="<?= the_post_thumbnail_url('large');?>" height="160" width="160" class="card-img-top" alt="<?php the_title();?>">
+                                <img src="<?= the_post_thumbnail_url('large');?>" class="card-img-top" alt="<?php the_title();?>">
                                 <div class="card-img-overlay">
                                     <h5 class="card-title"><?php the_title();?></h5>
                                 </div>
@@ -137,9 +137,9 @@ $slider = CFS()->get('slider_inicial');
                         </a>
                     </div> -->
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                        <a href="#">
+                        <a href="/donnovo/produtos/">
                             <div class="card bg-dark text-white">
-                                <img src="https://via.placeholder.com/220/800000/" class="card-img-top" alt="ProdutoDONNOVO">
+                                <img src="https://via.placeholder.com/220/800000/" class="card-img-top" alt="Veja todos os produtos">
                                 <div class="card-img-overlay">
                                     <h5 class="card-title">Veja nossos produtos</h5>
                                 </div>

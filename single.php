@@ -9,6 +9,7 @@ $produto['img']       =   CFS()->get('imagem_produto');
 $loop_galeria         =   CFS()->get('galeria');
 // adicionar_midia para o loop.
 
+$tags = get_the_tags(get_post()->ID);
 ?>
 
 <!-- main -->
@@ -67,14 +68,41 @@ $loop_galeria         =   CFS()->get('galeria');
     <div class="container">
         <h2 class="text-colored">Quem comprou também viu:</h2>
         <div class="row">
+            <?php
+            $tag_id = array();
+            for($i=0; $i<count($tags);$i++){
+                array_push($tag_id, $tags[$i]->term_id);
+            }
+
+            // die(print_r($tag_id));
+            // Query para pegar os 9 ultimos posts
+            $querySimilar = new WP_Query(array('tag__in' => $tag_id));
+            if($querySimilar->found_posts > 5){
+                $querySimilar->post_count = 5;
+            }
+            if (  $querySimilar->have_posts() ) : while (  $querySimilar->have_posts() ) :  $querySimilar->the_post(); ?>
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <a href="<?php the_permalink();?>">
+                    <div class="card bg-dark text-white">
+                        <img src="<?= the_post_thumbnail_url('large');?>" class="card-img-top" alt="<?php the_title();?>">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title"><?php the_title();?></h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <?php
+                endwhile; 
+                else :esc_html_e( 'Sorry, no posts matched your criteria.' ); endif; wp_reset_postdata();
+            ?>
+            <!-- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
                 <a href="#">
                     <div class="card bg-dark text-white">
                         <img src="https://via.placeholder.com/220" class="card-img-top" alt="ProdutoDONNOVO">
                     </div>
                 </a>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 d-none d-sm-block">
                 <a href="#">
                     <div class="card bg-dark text-white">
                         <img src="https://via.placeholder.com/220" class="card-img-top" alt="ProdutoDONNOVO">
@@ -94,14 +122,7 @@ $loop_galeria         =   CFS()->get('galeria');
                         <img src="https://via.placeholder.com/220" class="card-img-top" alt="ProdutoDONNOVO">
                     </div>
                 </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 d-none d-sm-block">
-                <a href="#">
-                    <div class="card bg-dark text-white">
-                        <img src="https://via.placeholder.com/220" class="card-img-top" alt="ProdutoDONNOVO">
-                    </div>
-                </a>
-            </div>
+            </div> -->
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
                 <a href="#">
                     <div class="card bg-dark text-white">
