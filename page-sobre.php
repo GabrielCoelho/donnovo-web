@@ -43,7 +43,7 @@ get_header();
         <div class="container-fluid bg-black my-5">
             <div class="container">
                 <div class="row text-white">
-                    <div class="col-4">
+                    <div class="col-xs-12 col-sm-6 col-md-4">
                         <h3 class="text-colored text-center">Nossa Missão</h3>
                         <hr class="missioval">
                         <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam asperiores velit modi 
@@ -51,7 +51,7 @@ get_header();
                             eos voluptatem id soluta dolores. Inventore.</p>
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-xs-12 col-sm-6 col-md-4">
                         <h3 class="text-colored text-center">Nossa Visão</h3>
                         <hr class="missioval">
                         <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam asperiores velit modi 
@@ -59,12 +59,19 @@ get_header();
                             eos voluptatem id soluta dolores. Inventore.</p>
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4">
                         <h3 class="text-colored text-center">Nossos Valores</h3>
                         <hr class="missioval">
                         <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam asperiores velit modi 
                             ullam ducimus omnis aliquam, aperiam id explicabo animi. In illum repellendus quas 
                             eos voluptatem id soluta dolores. Inventore.</p>
+                    </div>
+                </div>
+                <div class="row text-white">
+                    <div class="col-xs-12 col-sm-12 col-md-4 offset-md-4">
+                        <h3 class="text-colored text-center">Conheça nossa Loja Física</h3>
+                        <hr class="missioval">
+                        <p class="text-justify">Temos uma loja física com os melhores chopps e artigos de churrasco! <a href="/donnovo/loja/" class="btn btn-sm btn-danger">Conheça Já!</a></p>   
                     </div>
                 </div>
             </div>

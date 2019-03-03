@@ -17,13 +17,15 @@ $slider = CFS()->get('slider_inicial');
                             echo active;
                         }
                     ?>">
+                        <a href="<?= $slider[$i]['link_cta'];?>">
                         <img class="d-block w-100" src="<?= $slider[$i]['imagem_slider']?>" alt="DonNovo">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5><?= $slider[$i]['titulo_slider'];?></h5>
+                        </a>
+                        <!-- <div class="carousel-caption d-none d-md-block">
+                            <h5><?//= $slider[$i]['titulo_slider'];?></h5>
                             <hr>
-                            <p><?= $slider[$i]['texto_slider'];?></p>
-                            <a href="<?= $slider[$i]['link_cta'];?>" class="btn btn-danger btn-lg">Veja o Produto</a>
-                        </div>
+                            <p><?//= $slider[$i]['texto_slider'];?></p>
+                            <a href="<?//= $slider[$i]['link_cta'];?>" class="btn btn-danger btn-lg">Veja o Produto</a>
+                        </div> -->
                     </div>
                     <?php
                     }
@@ -75,71 +77,34 @@ $slider = CFS()->get('slider_inicial');
         <div class="row">
             <div class="container">
                 <div class="row">
-                <?php 
-                // Query para pegar os 9 ultimos posts
-                $queryIndex = new WP_Query(array('category_name' => 'Produto'));
-                if($queryIndex->found_posts > 5){
-                    $queryIndex->post_count = 5;
-                }
-                if (  $queryIndex->have_posts() ) : while (  $queryIndex->have_posts() ) :  $queryIndex->the_post(); ?>
+                    <?php 
+                    // Query para pegar os 9 ultimos posts
+                    $queryIndex = new WP_Query(array('category_name' => 'Produto'));
+                    if($queryIndex->found_posts > 5){
+                        $queryIndex->post_count = 5;
+                    }
+                    if (  $queryIndex->have_posts() ) : while (  $queryIndex->have_posts() ) :  $queryIndex->the_post(); 
+                    ?>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
                         <a href="<?php the_permalink();?>">
                             <div class="card bg-dark text-white">
                                 <img src="<?= the_post_thumbnail_url('large');?>" class="card-img-top" alt="<?php the_title();?>">
                                 <div class="card-img-overlay">
-                                    <h5 class="card-title"><?php the_title();?></h5>
+                                    <h5 class="card-title">
+                                        <?php the_title();?>
+                                    </h5>
                                 </div>
                             </div>
                         </a>
                     </div>
-                <?php
-                    endwhile; 
-                    else :esc_html_e( 'Sorry, no posts matched your criteria.' ); endif; wp_reset_postdata();
-                ?>
-                    <!-- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                        <a href="#">
-                            <div class="card bg-dark text-white">
-                                <img src="https://via.placeholder.com/220" class="card-img-top" alt="ProdutoDONNOVO">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title">Produto Don Novo</h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 d-none d-sm-block">
-                        <a href="#">
-                            <div class="card bg-dark text-white">
-                                <img src="https://via.placeholder.com/220" class="card-img-top" alt="ProdutoDONNOVO">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title">Produto Don Novo</h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 d-none d-sm-block">
-                        <a href="#">
-                            <div class="card bg-dark text-white">
-                                <img src="https://via.placeholder.com/220" class="card-img-top" alt="ProdutoDONNOVO">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title">Produto Don Novo</h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 d-none d-sm-block">
-                        <a href="#">
-                            <div class="card bg-dark text-white">
-                                <img src="https://via.placeholder.com/220" class="card-img-top" alt="ProdutoDONNOVO">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title">Produto Don Novo</h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div> -->
+                    <?php
+                        endwhile; 
+                        else :esc_html_e( 'Sorry, no posts matched your criteria.' ); endif; wp_reset_postdata();
+                    ?>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
                         <a href="/donnovo/produtos/">
                             <div class="card bg-dark text-white">
-                                <img src="https://via.placeholder.com/220/800000/" class="card-img-top" alt="Veja todos os produtos">
+                                <img src="https://via.placeholder.com/1980x1080/E11236/" class="card-img-top" alt="Veja todos os produtos">
                                 <div class="card-img-overlay">
                                     <h5 class="card-title">Veja nossos produtos</h5>
                                 </div>

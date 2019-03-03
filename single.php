@@ -14,6 +14,8 @@ $produto['desc']      =   CFS()->get('descricao_produto');
 $produto['img']       =   CFS()->get('imagem_produto');
 $loop_galeria         =   CFS()->get('galeria');
 // adicionar_midia para o loop.
+$produto['fulld']     =   CFS()->get('descricao_completa');
+$produto['spec']      =   CFS()->get('especificacoes');
 
 $tags = get_the_tags(get_post()->ID);
 ?>
@@ -25,10 +27,10 @@ $tags = get_the_tags(get_post()->ID);
                 <div class="wrapper row">
                     <div class="preview col-md-6">
                         <div class="preview-pic tab-content">
-                            <div class="tab-pane active" id="pic-1"><img src="<?= $produto['img'];?>" /></div>
+                            <div class="tab-pane active" id="pic-1"><a data-toggle="modal" data-target="#img1"><img src="<?= $produto['img'];?>" /></a></div>
                             <?php $j = 2; foreach($loop_galeria as $foto){
                                 ?>
-                                        <div class="tab-pane" id="pic-<?= $j; ?>"><img src="<?= $foto['adicionar_midia'];?>" /></div>
+                                        <div class="tab-pane" id="pic-<?= $j; ?>"><a data-toggle="modal" data-target="#img<?=$j?>"><img src="<?= $foto['adicionar_midia'];?>" /></a></div>
                                 <?php 
                                 $j++;   
                             }?>
@@ -52,6 +54,35 @@ $tags = get_the_tags(get_post()->ID);
                         </ul>
 
                     </div>
+                    <div class="modal fade" id="img1" tabindex="-1" role="dialog" aria-labelledby="img1" aria-hidden="true">
+                        <div class="modal-xl modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <img class="modal-body img-fluid" src="<?= $produto['img']?>">
+                            </div>
+                        </div>
+                    </div>
+                    <?php $j = 2; foreach($loop_galeria as $foto){
+                        ?>
+                            <div class="modal fade" id="img<?=$j;?>" tabindex="-1" role="dialog" aria-labelledby="img<?=$j;?>" aria-hidden="true">
+                                <div class="modal-xl modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <img class="modal-body img-fluid" src="<?= $foto['adicionar_midia'];?>">
+                                    </div>
+                                </div>
+                            </div>
+                        <?php 
+                        $j++;   
+                    }?>
                     <div class="details col-md-6">
                         <h3 class="product-title"><?= $produto['nome']; ?></h3>
                         <div class="rating">
@@ -61,7 +92,7 @@ $tags = get_the_tags(get_post()->ID);
                         <!-- <h4 class="price">Valor: <span></span></h4> -->
                         <!-- <p class="vote"><strong>91%</strong> que compraram, aprovaram o produto</p> -->
                         <div class="action">
-                            <a href="" class="add-to-cart btn btn-default" type="button">Chamar no Whatsapp</a>
+                            <a href="https://wa.me/19982403584/?text=Contato%20Via%20Site" class="add-to-cart btn btn-default" type="button">Chamar no Whatsapp</a>
                             <br><span class="text-colored">* Os pedidos são feitos via Whatsapp</span>
                             <!-- <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button> -->
                         </div>
@@ -70,6 +101,37 @@ $tags = get_the_tags(get_post()->ID);
             </div>
         </div>
     </div>
+
+    <!-- outras-infos  -->
+    <section class="info-item">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 px-3 w-100">
+                    <nav>
+                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-info-tab" data-toggle="tab" href="#nav-info"
+                                role="tab" aria-controls="nav-info" aria-selected="true">Informações</a>
+                            <a class="nav-item nav-link" id="nav-espec-tab" data-toggle="tab" href="#nav-espec" role="tab"
+                                aria-controls="nav-espec" aria-selected="false">Especificações</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
+                            <h3 class="info-header"><?= $produto['nome'];?></h3>
+                            <p><?= $produto['fulld'];?></p>
+                        </div>
+                        <div class="tab-pane fade" id="nav-espec" role="tabpanel" aria-labelledby="nav-espec-tab">
+                            <p>
+                                <?= $produto['spec'];?>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /outras infos -->
+
     <div class="clearfix"></div>
     <div class="container">
         <h2 class="text-colored">Quem comprou também viu:</h2>
@@ -140,4 +202,5 @@ $tags = get_the_tags(get_post()->ID);
     </div>
     <!-- /main -->
 
+    
 <?php get_footer();?>
