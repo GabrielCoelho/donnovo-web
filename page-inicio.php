@@ -49,21 +49,21 @@ $slider = CFS()->get('slider_inicial');
         <div class="row">
             <div class="col-lg-3 col-md-4 col-4">
                 <div class="envio-info">
-                    <p><i class="fas fa-shipping-fast fa-3x"></i></p>
+                    <p><img class="envinfos-ic" src="<?= get_template_directory_uri();?>/assets/images/truck.svg"></p>
                     <p class="bold-text">Envios Rápidos Regionais</p>
                     <p class="description">no raio de 80Km de Mogi Guaçu</p>
                 </div>
             </div>
             <div class="col-lg-6 col-md-4 col-4">
                 <div class="envio-info">
-                    <p><i class="fas fa-drumstick-bite fa-3x"></i></p>
+                    <p><img class="envinfos-ic" src="<?= get_template_directory_uri();?>/assets/images/knife.svg"></p>
                     <p class="bold-text">Lorem Ipsum</p>
                     <p class="description">dolor sit amet.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-4">
                 <div class="envio-info">
-                    <p><i class="fab fa-whatsapp fa-3x"></i></p>
+                    <p><img class="envinfos-ic" src="<?= get_template_directory_uri();?>/assets/images/whatsapp.svg"></p>
                     <p class="bold-text">Compre pelo Whatsapp</p>
                     <p class="description">Passamos todas as informações</p>
                 </div>

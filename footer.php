@@ -1,4 +1,5 @@
-<footer class="mt-5">
+
+<footer>
         <div class="container">
             <div class="row">
                 <div class="borderfooter order-lg-1 col-lg-3 col-sm-6 order-1 col-xs-12">
@@ -12,36 +13,45 @@
                         <li><a href="/donnovo/loja">Loja Física</a></li>
                     </ul>
                 </div>
-                <div class="borderfooter order-lg-2 col-lg-6 col-sm-12 order-3 col-xs-12 px-3 py-3">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem ex sapiente distinctio ut
-                        obcaecati deserunt consequatur suscipit, minus, inventore iusto quod sint vitae quas ducimus
-                        perspiciatis quasi ratione perferendis repellendus architecto laudantium voluptates sed
-                        reiciendis laborum esse. Asperiores, eius cumque!</p>
+                <div class="borderfooter order-lg-2 col-lg-6 col-sm-12 order-3 col-xs-12 px-3 py-3 text-center">
+                    <p class="info-local">
+                        <img class="icone-footer" src="<?= get_template_directory_uri();?>/assets/images/placeholder.svg" alt="">
+                        R. Paraná, 5 - Vila Vasconcelos. Mogi Guaçu/SP
+                    </p>
+                    <p class="info-local">
+                        <img class="icone-footer" src="<?= get_template_directory_uri();?>/assets/images/whatsapp.svg" alt="">
+                        (19)99774-0570
+                    </p>
+                    <p class="info-local">
+                        <img class="icone-footer" src="<?= get_template_directory_uri();?>/assets/images/arroba.svg" alt="">
+                        contato@donnovo.com.br
+                    </p>
                 </div>
                 <div class="order-lg-3 col-lg-3 col-sm-6 order-2 col-xs-12">
                     <h3>Siga-nos nas Redes Sociais</h3>
                     <div class="row">
                         <div class="col-3">
-                            <div class="rounded-circle">
-                                <i class="fab fa-facebook fa-3x"></i>
-                            </div>
+                            <a href="https://www.facebook.com/donnovoalimentos/" target="_blank">
+                                <img src="<?= get_template_directory_uri();?>/assets/images/facebook.svg" alt="" class="icone-fsocial">
+                            </a>
                         </div>
                         <div class="col-3">
-                            <div class="rounded-circle">
-                                <i class="fab fa-facebook fa-3x"></i>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="rounded-circle">
-                                <i class="fab fa-facebook fa-3x"></i>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="rounded-circle">
-                                <i class="fab fa-facebook fa-3x"></i>
-                            </div>
+                            <a href="https://www.facebook.com/donnovoalimentos/" target="_blank">
+                                <img src="<?= get_template_directory_uri();?>/assets/images/instagram.svg" alt="" class="icone-fsocial">
+                            </a>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-6 offset-sm-4 col-xs-12">
+                    <p class="fonte-simples">
+                        Don Novo &copy; Todos os Direitos Reservados.
+                    </p>
+                    <p class="fonte-simples">
+                        Feito com <i class="fas fa-heart" style="color: #E11236"></i> por <a href="https://github.com/GabrielCoelho/">Gabriel "Batata" Coelho</a>
+                    </p>        
+                    <!-- <p>Icones pegos do <a href="https://flaticon.com/"> Flaticon.</a> Vários Autores. </p> -->
                 </div>
             </div>
         </div>

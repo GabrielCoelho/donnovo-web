@@ -14,6 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- MocchaMatari Font -->
     <link href="//db.onlinewebfonts.com/c/3710eb8fca91ad0613cc0516af488328?family=MochaMattariW01-Regular" rel="stylesheet" type="text/css"/>
+    <!-- OpenSans Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
     <!-- bootstrap -->
     <link rel="stylesheet" href="<?= get_template_directory_uri();?>/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri();?>/assets/css/bootstrap-grid.min.css">

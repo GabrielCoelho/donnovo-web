@@ -3,7 +3,8 @@
 get_header();
 ?>
 
-<div class="bg-grey mx-auto">
+<div class="bg-grey mx-auto" style="background: 
+    url('<?= get_template_directory_uri();?>/assets/images/Produtos.jpeg')">>
         <div class="container">
             <div class="row pt-5">
                 <div class="cta-contato text-center pb-5">

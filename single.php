@@ -133,7 +133,7 @@ $tags = get_the_tags(get_post()->ID);
     <!-- /outras infos -->
 
     <div class="clearfix"></div>
-    <div class="container">
+    <div class="container my-5">
         <h2 class="text-colored">Quem comprou também viu:</h2>
         <div class="row">
             <?php
