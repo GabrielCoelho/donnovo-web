@@ -92,7 +92,7 @@ $tags = get_the_tags(get_post()->ID);
                         <!-- <h4 class="price">Valor: <span></span></h4> -->
                         <!-- <p class="vote"><strong>91%</strong> que compraram, aprovaram o produto</p> -->
                         <div class="action">
-                            <a href="https://wa.me/19982403584/?text=Contato%20Via%20Site" class="add-to-cart btn btn-default" type="button">Chamar no Whatsapp</a>
+                            <a href="https://wa.me/19997740570/?text=<?= $produto['nome'] . ' do Código ' . $produto['cod'] . ' Está disponível? (Via Website)'?>" class="add-to-cart btn btn-default" type="button">Chamar no Whatsapp</a>
                             <br><span class="text-colored">* Os pedidos são feitos via Whatsapp</span>
                             <!-- <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button> -->
                         </div>

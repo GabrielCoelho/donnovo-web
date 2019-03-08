@@ -39,11 +39,16 @@ if(isset($_POST)){
                         '<br><p><strong>Telefone</strong> ' . $telefone .' </p>'.
                         '<br><p><strong>Email</strong> ' . $email .' </p>'.
                         '<br><p><strong>Mensagem</strong><br> ' . $mensagem .' </p><br><br>'.
-                        '<em>Não esquece de respondê-lo o quanto antes</em>';
+                        '<em>Não esquecer de respondê-lo o quanto antes</em>';
         $mail->send();
         echo 'Message has been sent';
-        header("Location: http://localhost/donnovo/email-enviado/"); die();
+        header("Location: http://localhost:3000/donnovo/email-enviado/"); die();
     } catch (Exception $e) {
         echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
     }
+}else{
+    global $wp_query;
+            $wp_query->set_404();
+            status_header( 404 );
+            get_template_part( 404 ); exit();
 }

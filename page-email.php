@@ -4,7 +4,7 @@ get_header();?>
 
 <div class="bg-grey mx-auto">
     <div class="container">
-        <div class="row pt-5">
+        <div class="row justify-content-center pt-5">
             <div class="cta-contato text-center pb-5">
                 <h3>Email Enviado</h3>
                 <hr>

@@ -597,6 +597,10 @@ nav>div a.nav-item.nav-link.active {
 	width: 60px;
 }
 
+.envinfos-ic2{
+	width: 45px;
+}
+
 .bg-contato{
 	background-image: url("assets/images/Contato.jpeg");
 }
@@ -608,4 +612,29 @@ nav>div a.nav-item.nav-link.active {
 .fonte-simples a{
 	text-decoration: none;
 	color: white;
+}
+
+.logo-box{
+	background: white;
+	height: 150px;
+	width: 200px;
+	position: absolute;
+	padding: 3.2em 1em 0 1.4em;
+	top: -75px;
+	right: 70%;
+	border-bottom-left-radius: 5%;
+	border-bottom-right-radius: 5%;
+}
+
+.logo-box img{
+	max-width: 155px;
+}
+
+.whatsapp-top a{
+	text-decoration: none;
+    color: #fff;
+}
+
+.qlwapp-text{
+	display:none !important;
 }

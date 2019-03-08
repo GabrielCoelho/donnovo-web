@@ -40,9 +40,34 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
+    <div class="navbar navbar-expand-lg d-lg-block d-none navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <div class="row justify-content-end w-100">
+                <div class="searchbox col-lg-5 offset-lg-4 py-1">
+                    <form method="POST" action="/donnovo/pesquisa">
+                        <div class="form-group">
+                            <div class="input-group flex-nowrap input-group-sm">
+                                <input id="searchbox" name="searchbox1" class="form-control" type="text">
+                                <div class="input-group-append">
+                                    <button type="submit" class="input-group-text"><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="whatsapp-top col-lg-3 text-white py-1">
+                    <a href="https://wa.me/19997740570/">
+                    <img class="icone-footer" src="<?= get_template_directory_uri();?>/assets/images/whatsapp.svg" alt="">
+                    (19)99774-0570</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="logo-box sticky-top">
+            <a href="/donnovo/"><img class="img-fluid" src="<?= get_template_directory_uri()?>/assets/images/logo.png"  alt="Don Novo"> </a>
+        </div>
         <a class="navbar-brand d-xs-block d-lg-none donnovo_nome">DonNovo</a>
         <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -56,15 +81,35 @@
                 <li class="nav-item mr-5 pt-2 <?php if(is_page('Produtos') || is_single()){?>active<?php }?>">
                     <a class="nav-link"  href="/donnovo/produtos">Produtos <?php if(is_page('Produtos') || is_single()){?><span class="sr-only">(current)</span> <?php }?></a>
                 </li>
-                <li class="nav-item mr-5 d-none d-lg-block">
+                <!-- <li class="nav-item mr-5 d-none d-lg-block">
                     <a class="nav-link" style="width: 70px;"  href="/donnovo/"><img class="img-fluid logo-header" src="<?= get_template_directory_uri();?>/assets/images/logo.png" alt="Don Novo"></a>
-                </li>
+                </li> -->
                 <li class="nav-item mr-5 pt-2 <?php if(is_page('Sobre')){?>active<?php }?>">
                     <a class="nav-link"  href="/donnovo/sobre">Sobre <?php if(is_page('Sobre')){?><span class="sr-only">(current)</span> <?php }?></a>
                 </li>
                 <li class="nav-item mr-5 pt-2 <?php if(is_page('Contato')){?>active<?php }?>">
                     <a class="nav-link"  href="/donnovo/contato">Contato <?php if(is_page('Contato')){?><span class="sr-only">(current)</span> <?php }?></a>
                 </li>
+                <div class="nav-item mr-5 pt-2 d-xs-block d-sm-block d-md-block d-lg-none d-xl-none">
+                    <form method="POST" action="/donnovo/pesquisa">
+                        <div class="form-group">
+                            <div class="input-group flex-nowrap input-group-sm">
+                                <input id="searchbox" name="searchbox2" class="form-control" type="text">
+                                <div class="input-group-append">
+                                    <button type="submit" class="input-group-text"><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="nav-item mr-5 pt-2 d-xs-block d-sm-block d-md-block d-lg-none d-xl-none">
+                    <div class="whatsapp-top col-lg-3 text-white py-1">
+                        <a href="https://wa.me/19997740570/">
+                        <img class="icone-footer" src="<?= get_template_directory_uri();?>/assets/images/whatsapp.svg" alt="">
+                        (19)99774-0570
+                        </a>
+                    </div>
+                </div>
             </ul>
         </div>
     </nav>
