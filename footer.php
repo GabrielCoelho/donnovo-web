@@ -44,12 +44,12 @@
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col-sm-6 offset-sm-4 col-xs-12">
+                <div class="col-sm-6 offset-sm-3 text-center col-xs-12">
                     <p class="fonte-simples">
                         Don Novo &copy; Todos os Direitos Reservados.
                     </p>
-                    <p class="fonte-simples">
-                        Feito com <i class="fas fa-heart" style="color: #E11236"></i> por <a href="https://github.com/GabrielCoelho/">Gabriel "Batata" Coelho</a>
+                    <p class="fonte-simples" style="font-size: 12px;">
+                        Feito com <i class="fas fa-heart" style="color: #E11236"></i> por <a href="https://github.com/GabrielCoelho/" target="_blank">Gabriel "Batata" Coelho</a>
                     </p>        
                     <!-- <p>Icones pegos do <a href="https://flaticon.com/"> Flaticon.</a> Vários Autores. </p> -->
                 </div>

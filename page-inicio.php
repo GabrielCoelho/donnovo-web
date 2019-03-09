@@ -3,6 +3,8 @@
 get_header();
 
 $slider = CFS()->get('slider_inicial');
+$sobre_img = CFS()->get('imagem_sobre');
+$sobre_text = CFS()->get('texto_sobre');
 ?>
 
 <header>
@@ -122,17 +124,11 @@ $slider = CFS()->get('slider_inicial');
         <div class="row">
             <div class="col-lg-12">
                 <div class="image-left-sobre">
-                    <img src="https://via.placeholder.com/300/" alt="Sobre DonNovo">
+                    <img src="<?= $sobre_img;?>" class="img-fluid" alt="Sobre DonNovo">
                 </div>
                 <div class="sobre-right">
                     <h4>Don Novo</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, commodi fuga amet dolorum
-                        sequi eos quae facilis! Quo, obcaecati sequi! Atque accusantium repellendus expedita libero
-                        fuga ut perspiciatis sed est?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, commodi fuga amet dolorum
-                        sequi eos quae facilis! Quo, obcaecati sequi! Atque accusantium repellendus expedita libero
-                        fuga ut perspiciatis sed est?
-                    </p>
+                    <p><?= $sobre_text;?></p>
                 </div>
                 <div class="button-bottom-sobre">
                     <a href="/donnovo/sobre" class="btn btn-danger btn-lg">Saiba Mais</a>
