@@ -131,7 +131,7 @@ $sobre_text = CFS()->get('texto_sobre');
                     <p><?= $sobre_text;?></p>
                 </div>
                 <div class="button-bottom-sobre">
-                    <a href="/donnovo/sobre" class="btn btn-danger btn-lg">Saiba Mais</a>
+                    <a href="/sobre" class="btn btn-danger btn-lg">Saiba Mais</a>
                 </div>
             </div>
         </div>

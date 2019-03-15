@@ -10,7 +10,7 @@ get_header();?>
                 <hr>
                 <p>
                     Estaremos entrando em contato contigo o mais rápido possivel! Enquanto isso, fique a vontade para
-                    visualizar <a href="/donnovo/produtos/">Nossos Produtos</a>
+                    visualizar <a href="/produtos/">Nossos Produtos</a>
                 </p>
             </div>
         </div>

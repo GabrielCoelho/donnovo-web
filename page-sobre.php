@@ -81,8 +81,8 @@ get_header();
             <div class="row my-5">
                 <div class="col-6 offset-3">
                     <div class="mx-auto text-center">
-                        <h2 class="text-colored">Conheça também nossa Loja Física</h2>
-                        <a href="/donnovo/loja/" class="btn btn-danger btn-lg">Acesse Já!</a>
+                        <h2 class="text-colored">Converse conosco!</h2>
+                        <a href="/contato" class="btn btn-danger btn-lg">Entre em contato!</a>
                     </div>
                 </div>
             </div>

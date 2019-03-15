@@ -42,7 +42,7 @@ if(isset($_POST)){
                         '<em>Não esquecer de respondê-lo o quanto antes</em>';
         $mail->send();
         echo 'Message has been sent';
-        header("Location: http://localhost:3000/donnovo/email-enviado/"); die();
+        header("Location: donnovo.com.br/email-enviado/"); die();
     } catch (Exception $e) {
         echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
     }

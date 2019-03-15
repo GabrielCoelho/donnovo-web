@@ -44,7 +44,7 @@
         <div class="container">
             <div class="row justify-content-end w-100">
                 <div class="searchbox col-lg-5 offset-lg-4 py-1">
-                    <form method="POST" action="/donnovo/pesquisa">
+                    <form method="POST" action="/pesquisa">
                         <div class="form-group">
                             <div class="input-group flex-nowrap input-group-sm">
                                 <input id="searchbox" name="searchbox1" class="form-control" type="text">
@@ -66,7 +66,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="logo-box sticky-top">
-            <a href="/donnovo/"><img class="img-fluid" src="<?= get_template_directory_uri()?>/assets/images/logo.png"  alt="Don Novo"> </a>
+            <a href="/"><img class="img-fluid" src="<?= get_template_directory_uri()?>/assets/images/logo.png"  alt="Don Novo"> </a>
         </div>
         <a class="navbar-brand d-xs-block d-lg-none donnovo_nome">DonNovo</a>
         <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
@@ -76,22 +76,22 @@
         <div id="my-nav" class="collapse navbar-collapse">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item mr-5 pt-2 <?php if(is_page('Inicio')){?>active<?php }?>">
-                    <a class="nav-link" href="/donnovo/">Início <?php if(is_page('Inicio')){?><span class="sr-only">(current)</span> <?php }?></a>
+                    <a class="nav-link" href="/">Início <?php if(is_page('Inicio')){?><span class="sr-only">(current)</span> <?php }?></a>
                 </li>
                 <li class="nav-item mr-5 pt-2 <?php if(is_page('Produtos') || is_single()){?>active<?php }?>">
-                    <a class="nav-link"  href="/donnovo/produtos">Produtos <?php if(is_page('Produtos') || is_single()){?><span class="sr-only">(current)</span> <?php }?></a>
+                    <a class="nav-link"  href="/produtos">Produtos <?php if(is_page('Produtos') || is_single()){?><span class="sr-only">(current)</span> <?php }?></a>
                 </li>
                 <!-- <li class="nav-item mr-5 d-none d-lg-block">
-                    <a class="nav-link" style="width: 70px;"  href="/donnovo/"><img class="img-fluid logo-header" src="<?= get_template_directory_uri();?>/assets/images/logo.png" alt="Don Novo"></a>
+                    <a class="nav-link" style="width: 70px;"  href="/"><img class="img-fluid logo-header" src="<?= get_template_directory_uri();?>/assets/images/logo.png" alt="Don Novo"></a>
                 </li> -->
                 <li class="nav-item mr-5 pt-2 <?php if(is_page('Sobre')){?>active<?php }?>">
-                    <a class="nav-link"  href="/donnovo/sobre">Sobre <?php if(is_page('Sobre')){?><span class="sr-only">(current)</span> <?php }?></a>
+                    <a class="nav-link"  href="/sobre">Sobre <?php if(is_page('Sobre')){?><span class="sr-only">(current)</span> <?php }?></a>
                 </li>
                 <li class="nav-item mr-5 pt-2 <?php if(is_page('Contato')){?>active<?php }?>">
-                    <a class="nav-link"  href="/donnovo/contato">Contato <?php if(is_page('Contato')){?><span class="sr-only">(current)</span> <?php }?></a>
+                    <a class="nav-link"  href="/contato">Contato <?php if(is_page('Contato')){?><span class="sr-only">(current)</span> <?php }?></a>
                 </li>
                 <div class="nav-item mr-5 pt-2 d-xs-block d-sm-block d-md-block d-lg-none d-xl-none">
-                    <form method="POST" action="/donnovo/pesquisa">
+                    <form method="POST" action="/pesquisa">
                         <div class="form-group">
                             <div class="input-group flex-nowrap input-group-sm">
                                 <input id="searchbox" name="searchbox2" class="form-control" type="text">

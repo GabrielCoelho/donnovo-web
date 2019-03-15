@@ -5,12 +5,12 @@
                 <div class="borderfooter order-lg-1 col-lg-3 col-sm-6 order-1 col-xs-12">
                     <h3>Mapa do Site</h3>
                     <ul class="list-unstyled remove-link">
-                        <li><a href="/donnovo/">Início</a></li>
-                        <li><a href="/donnovo/sobre">Sobre</a></li>
-                        <li><a href="/donnovo/produtos">Produtos</a></li>
-                        <li><a href="/donnovo/contato">Contato</a></li>
-                        <li><a href="/donnovo/politica-de-privacidade">Política de Privacidade</a></li>
-                        <li><a href="/donnovo/loja">Loja Física</a></li>
+                        <li><a href="/">Início</a></li>
+                        <li><a href="/sobre">Sobre</a></li>
+                        <li><a href="/produtos">Produtos</a></li>
+                        <li><a href="/contato">Contato</a></li>
+                        <!-- <li><a href="politica-de-privacidade">Política de Privacidade</a></li> -->
+                        <li><a href="/loja">Loja Física</a></li>
                     </ul>
                 </div>
                 <div class="borderfooter order-lg-2 col-lg-6 col-sm-12 order-3 col-xs-12 px-3 py-3 text-center">
