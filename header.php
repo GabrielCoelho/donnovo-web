@@ -40,10 +40,10 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <div class="navbar navbar-expand-lg d-lg-block d-none navbar-dark bg-dark sticky-top">
+    <div class="navbar navbar-expand-lg d-lg-block d-none navbar-light bg-light">
         <div class="container">
             <div class="row justify-content-end w-100">
-                <div class="searchbox col-lg-5 offset-lg-4 py-1">
+                <div class="searchbox col-lg-5 offset-lg-2 pt-2">
                     <form method="POST" action="/pesquisa">
                         <div class="form-group">
                             <div class="input-group flex-nowrap input-group-sm">
@@ -55,9 +55,9 @@
                         </div>
                     </form>
                 </div>
-                <div class="whatsapp-top col-lg-3 text-white py-1">
+                <div class="whatsapp-top col-lg-3 pt-2">
                     <a href="https://wa.me/19997740570/">
-                    <img class="icone-footer" src="<?= get_template_directory_uri();?>/assets/images/whatsapp.svg" alt="">
+                    <img class="icone-footer icone-wpp-top" src="<?= get_template_directory_uri();?>/assets/images/whatsapp.svg" alt="">
                     (19)99774-0570</a>
                 </div>
             </div>
@@ -68,7 +68,7 @@
         <div class="logo-box sticky-top">
             <a href="/"><img class="img-fluid" src="<?= get_template_directory_uri()?>/assets/images/logo.png"  alt="Don Novo"> </a>
         </div>
-        <a class="navbar-brand d-xs-block d-lg-none donnovo_nome">DonNovo</a>
+        <a href="/" class="navbar-brand d-xs-block d-lg-none donnovo_nome">DonNovo</a>
         <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

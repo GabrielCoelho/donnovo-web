@@ -1,19 +1,18 @@
 <?php
 // Template Name: LojaFisica
 get_header();
+$texto = CFS()->get('texto_intro');
 ?>
 
 <div class="bg-grey mx-auto" style="background: 
-    url('<?= get_template_directory_uri();?>/assets/images/Loja.jpeg')">>
+    url('<?= get_template_directory_uri();?>/assets/images/Loja.jpeg') no-repeat; background-size: 1920px 303px;">>
         <div class="container">
             <div class="row pt-5">
                 <div class="cta-contato text-center pb-5">
                     <h3>Loja Física</h3>
                     <hr>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem incidunt omnis id molestias adipisci accusantium 
-                        explicabo dolore aliquid architecto nihil. Sequi temporibus enim possimus officiis. Accusantium soluta 
-                        reiciendis illo libero!
+                        <?= $texto;?>
                     </p>
                 </div>
             </div>

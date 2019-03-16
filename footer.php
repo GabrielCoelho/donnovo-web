@@ -29,16 +29,34 @@
                 </div>
                 <div class="order-lg-3 col-lg-3 col-sm-6 order-2 col-xs-12">
                     <h3>Siga-nos nas Redes Sociais</h3>
-                    <div class="row">
-                        <div class="col-3">
-                            <a href="https://www.facebook.com/donnovoalimentos/" target="_blank">
-                                <img src="<?= get_template_directory_uri();?>/assets/images/facebook.svg" alt="" class="icone-fsocial">
-                            </a>
+                    <div class="d-block d-md-none">
+                        <div class="row iconesfooter">
+                            <div class="col-3">
+                                <a href="https://www.facebook.com/donnovoalimentos/" target="_blank">
+                                    <img src="<?= get_template_directory_uri();?>/assets/images/facebook.svg" alt="" class="icone-fsocial">
+                                </a>
+                            </div>
                         </div>
-                        <div class="col-3">
-                            <a href="https://www.facebook.com/donnovoalimentos/" target="_blank">
-                                <img src="<?= get_template_directory_uri();?>/assets/images/instagram.svg" alt="" class="icone-fsocial">
-                            </a>
+                        <div class="row iconesfooter">
+                            <div class="col-3">
+                                <a href="https://www.facebook.com/donnovoalimentos/" target="_blank">
+                                    <img src="<?= get_template_directory_uri();?>/assets/images/instagram.svg" alt="" class="icone-fsocial">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <div class="row iconesfooter">
+                            <div class="col-3">
+                                <a href="https://www.facebook.com/donnovoalimentos/" target="_blank">
+                                    <img src="<?= get_template_directory_uri();?>/assets/images/facebook.svg" alt="" class="icone-fsocial">
+                                </a>
+                            </div>
+                            <div class="col-3">
+                                <a href="https://www.facebook.com/donnovoalimentos/" target="_blank">
+                                    <img src="<?= get_template_directory_uri();?>/assets/images/instagram.svg" alt="" class="icone-fsocial">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

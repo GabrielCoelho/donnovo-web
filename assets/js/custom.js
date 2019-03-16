@@ -19,8 +19,12 @@ $(document).ready(function(){
     });
     
     if ($(".filter-button").removeClass("active")) {
-$(this).removeClass("active");
-}
-$(this).addClass("active");
+    $(this).removeClass("active");
+    }
+    $(this).addClass("active");
+
+    $('.carousel').carousel({
+        interval: 6000
+      })
 
 });

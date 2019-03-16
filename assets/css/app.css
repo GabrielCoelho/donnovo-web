@@ -121,8 +121,8 @@ body{
 }
 
 
-.sobre-right h4{
-    text-align: center;
+.sobre-right h3{
+	text-align: center;
 } 
 
 .button-bottom-sobre{
@@ -606,7 +606,7 @@ nav>div a.nav-item.nav-link.active {
 }
 
 .fonte-simples{
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", sans-serif !important;
 }
 
 .fonte-simples a{
@@ -632,9 +632,27 @@ nav>div a.nav-item.nav-link.active {
 
 .whatsapp-top a{
 	text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 
 .qlwapp-text{
 	display:none !important;
+}
+
+
+.searchbox.col-lg-5.offset-lg-2.pt-2{
+	margin-right: 15px;
+}
+
+.navbar-light, .bg-light{
+	background: #fff !important;
+	color: #000 !important;
+}
+
+.icone-wpp-top{
+	filter: invert(0) !important;
+}
+
+.texto-mocha{
+	font-family: "MochaMattariW01-Regular";
 }

@@ -5,6 +5,12 @@ get_header();
 $slider = CFS()->get('slider_inicial');
 $sobre_img = CFS()->get('imagem_sobre');
 $sobre_text = CFS()->get('texto_sobre');
+$envio_info1 = CFS()->get('envio_info_1');
+$envio_info2 = CFS()->get('envio_info_2');
+$acc_info1 = CFS()->get('acessorio_info_1');
+$acc_info2 = CFS()->get('acessorio_info_2');
+$wpp_info1 = CFS()->get('whatsapp_info_1');
+$wpp_info2 =CFS()->get('whatsapp_info_2');
 ?>
 
 <header>
@@ -49,25 +55,25 @@ $sobre_text = CFS()->get('texto_sobre');
     <!-- Info envios -->
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-4 col-4">
+            <div class="col-sm-4 col-xs-12">
                 <div class="envio-info">
                     <p><img class="envinfos-ic" src="<?= get_template_directory_uri();?>/assets/images/truck.svg"></p>
-                    <p class="bold-text">Envios Rápidos Regionais</p>
-                    <p class="description">no raio de 80Km de Mogi Guaçu</p>
+                    <p class="bold-text"><?= $envio_info1;?></p>
+                    <p class="description"><?= $envio_info2;?></p>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-4 col-4">
+            <div class="col-sm-4 col-xs-12">
                 <div class="envio-info">
                     <p><img class="envinfos-ic" src="<?= get_template_directory_uri();?>/assets/images/knife.svg"></p>
-                    <p class="bold-text">Lorem Ipsum</p>
-                    <p class="description">dolor sit amet.</p>
+                    <p class="bold-text"><?= $acc_info1;?></p>
+                    <p class="description"><?= $acc_info2;?></p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-4">
+            <div class="col-sm-4 col-xs-12">
                 <div class="envio-info">
                     <p><img class="envinfos-ic" src="<?= get_template_directory_uri();?>/assets/images/whatsapp.svg"></p>
-                    <p class="bold-text">Compre pelo Whatsapp</p>
-                    <p class="description">Passamos todas as informações</p>
+                    <p class="bold-text"><?= $wpp_info1;?></p>
+                    <p class="description"><?= $wpp_info2;?></p>
                 </div>
             </div>
         </div>
@@ -127,7 +133,7 @@ $sobre_text = CFS()->get('texto_sobre');
                     <img src="<?= $sobre_img;?>" class="img-fluid" alt="Sobre DonNovo">
                 </div>
                 <div class="sobre-right">
-                    <h4>Don Novo</h4>
+                    <h3 class="texto-mocha">Nossa Empresa</h3>
                     <p><?= $sobre_text;?></p>
                 </div>
                 <div class="button-bottom-sobre">
