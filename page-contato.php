@@ -42,10 +42,10 @@ $textinho = CFS()->get('texto_intro');
             <div class="col-xs-12 col-sm-5 offset-sm-1">
                 <h3>Siga-nos nas Redes Sociais</h3>
                 <div class="row my-2">
-                    <a href="https://www.facebook.com/donnovoalimentos/" target="_blank">
+                    <a href="https://www.facebook.com/donnovooficial/" target="_blank">
                         <img src="<?= get_template_directory_uri();?>/assets/images/facebook.svg" alt="" class="envinfos-ic2">
                     </a>
-                   <a href="https://www.facebook.com/donnovoalimentos/" target="_blank">
+                   <a href="https://www.instagram.com/donnovooficial/" target="_blank">
                         <img src="<?= get_template_directory_uri();?>/assets/images/instagram.svg" alt="" class="envinfos-ic2">
                     </a>
                 </div>

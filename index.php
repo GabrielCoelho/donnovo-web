@@ -1,5 +1,5 @@
 <?php 
-// get_header();
+get_header();
 ?>
 <div class="bg-grey mx-auto">
     <div class="container">
@@ -18,5 +18,5 @@
     </div>
 </div>
 <?php
-// get_footer();
+get_footer();
 ?>

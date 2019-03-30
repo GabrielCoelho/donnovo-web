@@ -92,7 +92,7 @@ $tags = get_the_tags(get_post()->ID);
                         <!-- <h4 class="price">Valor: <span></span></h4> -->
                         <!-- <p class="vote"><strong>91%</strong> que compraram, aprovaram o produto</p> -->
                         <div class="action">
-                            <a href="https://wa.me/19997740570/?text=<?= $produto['nome'] . ' do Código ' . $produto['cod'] . ' Está disponível? (Via Website)'?>" class="add-to-cart btn btn-default" type="button">Chamar no Whatsapp</a>
+                            <a href="https://api.whatsapp.com/send?phone=5519997740570" class="add-to-cart btn btn-default" type="button">Chamar no Whatsapp</a>
                             <br><span class="text-colored">* Os pedidos são feitos via Whatsapp</span>
                             <!-- <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button> -->
                         </div>
@@ -151,8 +151,8 @@ $tags = get_the_tags(get_post()->ID);
             if (  $querySimilar->have_posts() ) : while (  $querySimilar->have_posts() ) :  $querySimilar->the_post(); ?>
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
                 <a href="<?php the_permalink();?>">
-                    <div class="card bg-dark text-white">
-                        <img src="<?= the_post_thumbnail_url('large');?>" class="card-img-top" alt="<?php the_title();?>">
+                    <div class="card bg-dark text-red">
+                        <img src="<?= the_post_thumbnail_url('large');?>" class="card-img-top img-fluid mxhcard" alt="<?php the_title();?>">
                         <div class="card-img-overlay">
                             <h5 class="card-title"><?php the_title();?></h5>
                         </div>
@@ -194,7 +194,10 @@ $tags = get_the_tags(get_post()->ID);
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
                 <a href="#">
                     <div class="card bg-dark text-white">
-                        <img src="https://via.placeholder.com/220/800000/?text=Veja+nossos+produtos" class="card-img-top" alt="ProdutoDONNOVO">
+                        <img src="https://via.placeholder.com/1980x1080/E11236/?text=%20" class="card-img-top img-fluid mxhcard" alt="ProdutoDONNOVO">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Veja nossos produtos</h5>
+                        </div>
                     </div>
                 </a>
             </div>

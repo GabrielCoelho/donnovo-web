@@ -32,14 +32,14 @@
                     <div class="d-block d-md-none">
                         <div class="row iconesfooter">
                             <div class="col-3">
-                                <a href="https://www.facebook.com/donnovoalimentos/" target="_blank">
+                                <a href="https://www.facebook.com/donnovooficial/" target="_blank">
                                     <img src="<?= get_template_directory_uri();?>/assets/images/facebook.svg" alt="" class="icone-fsocial">
                                 </a>
                             </div>
                         </div>
                         <div class="row iconesfooter">
                             <div class="col-3">
-                                <a href="https://www.facebook.com/donnovoalimentos/" target="_blank">
+                                <a href="https://www.instagram.com/donnovooficial/" target="_blank">
                                     <img src="<?= get_template_directory_uri();?>/assets/images/instagram.svg" alt="" class="icone-fsocial">
                                 </a>
                             </div>
@@ -48,12 +48,12 @@
                     <div class="d-none d-md-block">
                         <div class="row iconesfooter">
                             <div class="col-3">
-                                <a href="https://www.facebook.com/donnovoalimentos/" target="_blank">
+                                <a href="https://www.facebook.com/donnovooficial/" target="_blank">
                                     <img src="<?= get_template_directory_uri();?>/assets/images/facebook.svg" alt="" class="icone-fsocial">
                                 </a>
                             </div>
                             <div class="col-3">
-                                <a href="https://www.facebook.com/donnovoalimentos/" target="_blank">
+                                <a href="https://www.instagram.com/donnovooficial/" target="_blank">
                                     <img src="<?= get_template_directory_uri();?>/assets/images/instagram.svg" alt="" class="icone-fsocial">
                                 </a>
                             </div>

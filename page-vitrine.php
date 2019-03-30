@@ -5,31 +5,31 @@ $textinho = CFS()->get('texto_intro');
 ?>
 
 <div class="bg-grey mx-auto" style="background:  
-    url('<?= get_template_directory_uri();?>/assets/images/Produtos.jpeg') no-repeat; background-size: 1920px 303px;">>
-        <div class="container">
-            <div class="row pt-5">
-                <div class="cta-contato text-center pb-5">
-                    <h3>Nossos Produtos</h3>
-                    <hr>
-                    <p>
-                        <?= $textinho;?>
-                    </p>
-                </div>
+    url('<?= get_template_directory_uri();?>/assets/images/Produtos.jpeg') no-repeat; background-size: 1920px 303px;">
+    <div class="container">
+        <div class="row justify-content-center pt-5">
+            <div class="cta-contato text-center pb-5">
+                <h3>Nossos Produtos</h3>
+                <hr>
+                <p>
+                    <?= $textinho;?>
+                </p>
             </div>
         </div>
     </div>
+</div>
 
     <main class="container my-4">
-        <div class="row text-center justify-content-center my-5">
-            <button class="btn btn-default filter-button mr-2" data-filter="all">Todos</button>
+        <!-- <div class="row text-center justify-content-center my-5">
+            <button class="btn btn-default filter-button mr-2" data-filter="all">Todos</button> -->
             <?php 
-                $tags_array = get_tags(array('fields' => 'names'));
-                // die(print_r($tags_array));
-                foreach ($tags_array as $key) {
+                // $tags_array = get_tags(array('fields' => 'names'));
+                // // die(print_r($tags_array));
+                // foreach ($tags_array as $key) {
                     ?>
-                        <button class="btn btn-default filter-button mr-2" data-filter="<?= $key;?>"><?= $key?></button>
+                        <!-- <button class="btn btn-default filter-button mr-2" data-filter="<?= $key;?>"><?= $key?></button> -->
                     <?php
-                }
+                // }
             ?>
             <!-- <button class="btn btn-default filter-button mr-2" data-filter="hdpe">Categoria1</button>
             <button class="btn btn-default filter-button mr-2" data-filter="sprinkle">Categoria2</button>
@@ -39,6 +39,9 @@ $textinho = CFS()->get('texto_intro');
         <div class="row">
             <?php
                 $query_archive = new WP_Query(array('category_name' => 'Produto'));
+                // if($query_archive->found_posts > 9){
+                //     $query_archive->post_count = 9;
+                // }
                 // die(print_r($query_archive->posts));
                 //die(print_r($query_archive->post_count));
                 if (  $query_archive->have_posts() ) : while (  $query_archive->have_posts() ) :  $query_archive->the_post(); 
@@ -50,10 +53,10 @@ $textinho = CFS()->get('texto_intro');
                             echo " " . $key->name;
                         }?>">
                     <a href="<?php the_permalink();?>">
-                        <div class="card bg-dark text-white"> 
-                        <img src="<?= the_post_thumbnail_url('large');?>" class="card-img-top" alt="<?php the_title();?>">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">
+                        <div class="card bg-dark"> 
+                        <img src="<?= the_post_thumbnail_url('large');?>" class="card-img-top img-fluid cardvitrinetop" alt="<?php the_title();?>">
+                        <div class="card-img-overlay vitrine-card">
+                            <h5 class="card-title text-red2">
                                 <?php the_title();?>
                             </h5>
                         </div>

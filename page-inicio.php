@@ -95,8 +95,8 @@ $wpp_info2 =CFS()->get('whatsapp_info_2');
                     ?>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
                         <a href="<?php the_permalink();?>">
-                            <div class="card bg-dark text-white">
-                                <img src="<?= the_post_thumbnail_url('large');?>" class="card-img-top" alt="<?php the_title();?>">
+                            <div class="card bg-dark text-red">
+                                <img src="<?= the_post_thumbnail_url('large');?>" class="card-img-top img-fluid mxhcard" alt="<?php the_title();?>">
                                 <div class="card-img-overlay">
                                     <h5 class="card-title">
                                         <?php the_title();?>
@@ -112,7 +112,7 @@ $wpp_info2 =CFS()->get('whatsapp_info_2');
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
                         <a href="/donnovo/produtos/">
                             <div class="card bg-dark text-white">
-                                <img src="https://via.placeholder.com/1980x1080/E11236/" class="card-img-top" alt="Veja todos os produtos">
+                                <img src="https://via.placeholder.com/1980x1080/E11236/?text=%20" class="card-img-top img-fluid mxhcard" alt="Veja todos os produtos">
                                 <div class="card-img-overlay">
                                     <h5 class="card-title">Veja nossos produtos</h5>
                                 </div>

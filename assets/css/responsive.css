@@ -12,6 +12,10 @@
         text-align: left;
         color: #800000;
     }
+    
+    .pdgl-4{
+        padding-left: 8rem;
+    }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -35,6 +39,10 @@
 
     .searchbox.col-lg-5.offset-lg-2.pt-2{
         margin-right: 44px;
+    }
+    
+    .pdgl-4{
+        padding-left: 8rem;
     }
 }
 
@@ -69,6 +77,13 @@
     .logo-box {
         display: none !important;
     }
+    .cardvitrinetop{
+        max-height: 220px;
+        height: 220px;
+    }
+    .pdgl-4{
+        padding-left: 0;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -89,6 +104,16 @@
     .borderfooter {
         border-right: none;
     }
+    .cardvitrinetop{
+        max-height: 170px;
+        height: 170px;
+    }
+    .vitrine-card{
+        top: 10px !important;
+    }
+    .pdgl-4{
+        padding-left: 0;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -106,6 +131,13 @@
     }
     .iconesfooter{
         justify-content: center;
+    }
+    .cardvitrinetop{
+        max-height: 250px;
+        height: 250px;
+    }
+    .pdgl-4{
+        padding-left: 0;
     }
 }
 
@@ -125,6 +157,9 @@
     .iconesfooter{
         justify-content: center;
     }
+    .pdgl-4{
+        padding-left: 0;
+    }
 }
 
 @media only screen and (max-width: 484px) {
@@ -143,6 +178,9 @@
     .iconesfooter{
         justify-content: center;
     }
+    .pdgl-4{
+        padding-left: 0;
+    }
 }
 
 @media only screen and (max-width: 420px) {
@@ -160,6 +198,9 @@
     }
     .iconesfooter{
         justify-content: center;
+    }
+    .pdgl-4{
+        padding-left: 0;
     }
 }
 
@@ -182,5 +223,12 @@
     }
     .iconesfooter{
         justify-content: center;
+    }
+    .cardvitrinetop{
+        max-height: 220px;
+        height: 220px;
+    }
+    .pdgl-4{
+        padding-left: 0;
     }
 }

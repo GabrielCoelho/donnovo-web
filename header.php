@@ -47,7 +47,7 @@
                     <form method="POST" action="/pesquisa">
                         <div class="form-group">
                             <div class="input-group flex-nowrap input-group-sm">
-                                <input id="searchbox" name="searchbox1" class="form-control" type="text">
+                                <input id="searchbox" name="searchbox1" placeholder="O Que Deseja?" class="form-control" type="text">
                                 <div class="input-group-append">
                                     <button type="submit" class="input-group-text"><i class="fas fa-search"></i></button>
                                 </div>
@@ -56,7 +56,7 @@
                     </form>
                 </div>
                 <div class="whatsapp-top col-lg-3 pt-2">
-                    <a href="https://wa.me/19997740570/">
+                    <a href="https://api.whatsapp.com/send?phone=5519997740570">
                     <img class="icone-footer icone-wpp-top" src="<?= get_template_directory_uri();?>/assets/images/whatsapp.svg" alt="">
                     (19)99774-0570</a>
                 </div>
@@ -74,27 +74,47 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div id="my-nav" class="collapse navbar-collapse">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item mr-5 pt-2 <?php if(is_page('Inicio')){?>active<?php }?>">
-                    <a class="nav-link" href="/">Início <?php if(is_page('Inicio')){?><span class="sr-only">(current)</span> <?php }?></a>
+            <ul class="navbar-nav mx-auto pdgl-4">
+                <li class="nav-item mr-5 pt-2 <?php if(is_page('Início')){?>active<?php }?>">
+                    <a class="nav-link" href="/">Início <?php if(is_page('Início')){?><span class="sr-only">(current)</span> <?php }?></a>
                 </li>
-                <li class="nav-item mr-5 pt-2 <?php if(is_page('Produtos') || is_single()){?>active<?php }?>">
-                    <a class="nav-link"  href="/produtos">Produtos <?php if(is_page('Produtos') || is_single()){?><span class="sr-only">(current)</span> <?php }?></a>
+                <li class="nav-item mr-5 pt-2 dropdown <?php if(is_page('Produtos') || is_single()){?>active<?php }?>">
+                    <a class="nav-link dropdown-toggle"  href=""
+                        role="button" id="dropdownProdutos" data-toggle="dropdown" aria-haspopup="true" 
+                        aria-expanded="false">Produtos <?php if(is_page('Produtos') || is_single()){?><span class="sr-only">(current)</span> <?php }?></a>
+                    
+                    <div class="dropdown-menu" aria-labelledby="dropdownProdutos">
+                        
+                        <?php
+                            $prodcat    =   get_categories();
+                            foreach ($prodcat as $x) {
+                                // print_r($x->slug);
+                                if($x->slug == "produto"){ continue;}
+                                if($x->slug == "sem-categoria"){ continue;}
+                                 ?>
+                                    <a class="dropdown-item" href="/<?= $x->slug?>"><?= $x->slug?></a>
+                                 <?php
+                            }
+                        ?>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/produtos">Todos os Produtos</a>
+                    </div>
                 </li>
-                <!-- <li class="nav-item mr-5 d-none d-lg-block">
-                    <a class="nav-link" style="width: 70px;"  href="/"><img class="img-fluid logo-header" src="<?= get_template_directory_uri();?>/assets/images/logo.png" alt="Don Novo"></a>
-                </li> -->
+                <?php //die(print_r($prodcat));?>
                 <li class="nav-item mr-5 pt-2 <?php if(is_page('Sobre')){?>active<?php }?>">
                     <a class="nav-link"  href="/sobre">Sobre <?php if(is_page('Sobre')){?><span class="sr-only">(current)</span> <?php }?></a>
                 </li>
                 <li class="nav-item mr-5 pt-2 <?php if(is_page('Contato')){?>active<?php }?>">
                     <a class="nav-link"  href="/contato">Contato <?php if(is_page('Contato')){?><span class="sr-only">(current)</span> <?php }?></a>
                 </li>
+                <li class="nav-item mr-5 pt-2 <?php if(is_page('Loja')){?>active<?php }?>">
+                    <a class="nav-link"  href="/loja">Loja Física <?php if(is_page('Loja')){?><span class="sr-only">(current)</span> <?php }?></a>
+                </li>
                 <div class="nav-item mr-5 pt-2 d-xs-block d-sm-block d-md-block d-lg-none d-xl-none">
                     <form method="POST" action="/pesquisa">
                         <div class="form-group">
                             <div class="input-group flex-nowrap input-group-sm">
-                                <input id="searchbox" name="searchbox2" class="form-control" type="text">
+                                <input id="searchbox" name="searchbox2" placeholder="O Que Deseja?" class="form-control" type="text">
                                 <div class="input-group-append">
                                     <button type="submit" class="input-group-text"><i class="fas fa-search"></i></button>
                                 </div>
@@ -104,13 +124,13 @@
                 </div>
                 <div class="nav-item mr-5 pt-2 d-xs-block d-sm-block d-md-block d-lg-none d-xl-none">
                     <div class="whatsapp-top col-lg-3 text-white py-1">
-                        <a href="https://wa.me/19997740570/">
+                        <a href="https://api.whatsapp.com/send?phone=5519997740570">
                         <img class="icone-footer" src="<?= get_template_directory_uri();?>/assets/images/whatsapp.svg" alt="">
                         (19)99774-0570
                         </a>
                     </div>
                 </div>
-            </ul>
+            </ul> 
         </div>
     </nav>
     <!-- /Navbar -->

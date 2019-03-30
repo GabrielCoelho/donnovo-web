@@ -22,14 +22,15 @@ if(isset($_POST)){
         $mail->isSMTP();                                      // Set mailer to use SMTP
         $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;                               // Enable SMTP authentication
-        $mail->Username = 'gbcoe2@gmail.com';                 // SMTP username
+        $mail->Username = 'gbcoe2@gmail.com';                  // SMTP username
         $mail->Password = 'batata13';                           // SMTP password
         $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
         $mail->Port = 587;                                    // TCP port to connect to
         $mail->CharSet = 'UTF-8';
         //Recipients
-        $mail->setFrom('dev@donnovo.com.br', 'Contato Don Novo');
-        $mail->addAddress('soares@workmail.com', '');     // Add a recipient
+        $mail->setFrom('gbcoe2@gmail.com', 'Contato Don Novo');
+        $mail->addAddress('comercial.donnovo@gmail.com', '');
+        $mail->addCC('contato@donnovo.com.br');     // Add a recipient
 
         //Content
         $mail->isHTML(true);                                  // Set email format to HTML
@@ -41,8 +42,8 @@ if(isset($_POST)){
                         '<br><p><strong>Mensagem</strong><br> ' . $mensagem .' </p><br><br>'.
                         '<em>Não esquecer de respondê-lo o quanto antes</em>';
         $mail->send();
-        echo 'Message has been sent';
-        header("Location: donnovo.com.br/email-enviado/"); die();
+        // echo 'Message has been sent';
+        header("Location: http://donnovo.com.br/email-enviado/"); die();
     } catch (Exception $e) {
         echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
     }

@@ -615,8 +615,8 @@ nav>div a.nav-item.nav-link.active {
 }
 
 .logo-box{
-	background: white;
-	height: 150px;
+	background: #e9ecef;
+	height: 165px;
 	width: 200px;
 	position: absolute;
 	padding: 3.2em 1em 0 1.4em;
@@ -655,4 +655,47 @@ nav>div a.nav-item.nav-link.active {
 
 .texto-mocha{
 	font-family: "MochaMattariW01-Regular";
+}
+
+.text-red{
+	color: #D8D8D8;	
+}
+
+.text-red:hover{
+	color: #6e6e6e;
+}
+
+.mxhcard{
+	max-height: 116px;
+	height: 116px;
+}
+
+.vitrine-card{
+	top: 35px !important;
+	max-width: 5em;
+	font-size: 2.2em;
+}
+
+
+.text-red2{
+	color: #b90624;
+	font-weight: bold;
+	background: rgba(0,0,0,0.5);
+}
+
+.cardvitrinetop{
+	max-height: 250px;
+	height: 250px;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.bg-dark{
+	background: #000 !important;
+}
+
+.imgrowloja img{
+	max-width: 19.78%
 }
