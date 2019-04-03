@@ -8,7 +8,7 @@ $textinho = CFS()->get('texto_intro');
 <div class="bg-grey mx-auto" style="background: 
     url('<?= get_template_directory_uri();?>/assets/images/Contato.jpeg') no-repeat; background-size: 1920px 303px;">
         <div class="container">
-            <div class="row pt-5">
+            <div class="row justify-content-center pt-5">
                 <div class="cta-contato text-center pb-5">
                     <h3>Entre em contato</h3>
                     <hr>

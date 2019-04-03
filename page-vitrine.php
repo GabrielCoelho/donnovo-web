@@ -56,7 +56,7 @@ $textinho = CFS()->get('texto_intro');
                         <div class="card bg-dark"> 
                         <img src="<?= the_post_thumbnail_url('large');?>" class="card-img-top img-fluid cardvitrinetop" alt="<?php the_title();?>">
                         <div class="card-img-overlay vitrine-card">
-                            <h5 class="card-title text-red2">
+                            <h5 class="card-title align-middle text-red2">
                                 <?php the_title();?>
                             </h5>
                         </div>

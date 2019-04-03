@@ -30,7 +30,7 @@ $textinho = CFS()->get('texto_intro');
             <div class="row">
                 <div class="col-xs-12 col-sm-7">
                     <img class="img-fluid" src="<?= $imagem?>" alt="DonNovo">
-                    <img class="img-fluid" src="<?= $imagem2?>" alt="DonNovo">
+                    <!-- <img class="img-fluid" src="<?//= $imagem2?>" alt="DonNovo"> -->
                 </div>
                 <div class="col-xs-12 col-sm-4 offset-sm-1">
                     <h5 class="text-colored">A História do Don Novo</h5>

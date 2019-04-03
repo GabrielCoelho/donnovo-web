@@ -658,11 +658,11 @@ nav>div a.nav-item.nav-link.active {
 }
 
 .text-red{
-	color: #D8D8D8;	
+	color: #ffffff;	
 }
 
 .text-red:hover{
-	color: #6e6e6e;
+	/* color: #6e6e6e; */
 }
 
 .mxhcard{
@@ -671,16 +671,19 @@ nav>div a.nav-item.nav-link.active {
 }
 
 .vitrine-card{
-	top: 35px !important;
-	max-width: 5em;
-	font-size: 2.2em;
+	/* top: 35px !important;
+	max-width: 5em; */
+	font-size: 3.8em;
+	padding: 1em;
 }
 
 
 .text-red2{
-	color: #b90624;
+	color: #fff;
 	font-weight: bold;
-	background: rgba(0,0,0,0.5);
+	text-align: center;
+	font-size: 70%;
+	/* background: rgba(0,0,0,0.5); */
 }
 
 .cardvitrinetop{
@@ -698,4 +701,22 @@ nav>div a.nav-item.nav-link.active {
 
 .imgrowloja img{
 	max-width: 19.78%
+}
+
+.card .vitrine-card .card-title,
+.card.bg-dark.text-red .card-title{
+	display:none;
+}
+
+.card .vitrine-card:hover .card-title,
+.card.bg-dark.text-red:hover .card-title{
+	display: block;
+	-moz-animation: fadeIn 1.5s;
+	-webkit-animation: fadeIn 1.5s;
+	animation: fadeIn 1.5s;
+}
+
+.card.bg-dark:hover .vitrine-card,
+.card.bg-dark.text-red:hover .card-img-overlay{
+	background: rgba(0,0,0,0.5)
 }
